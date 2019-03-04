@@ -1,0 +1,16 @@
+Title: Big Data Size Estimation -- What's the magnitude of the problem?
+
+Summary: Before designing a technical solution to any problem, it is first 
+and foremost important to assess the magnitude of the problem. In this 
+presentation for students of the RU Big Data course, I discuss the 1998
+WWW Conference paper of Sergey Brin and Larry Page that introduces Google. 
+(an absolute classic, cited more than 17,000 times!) I will identify 
+the design choices that made Google the world's most influential search 
+engine. These design choices include a forerunner of the Google File 
+System (called BigFiles, where chunks are called barrels), a forerunner 
+of MapReduce (by means of explicit Sorters), as well as PageRank, anchor 
+text extraction, and a classical inverted index (that may all be 
+computed by MapReduce). The design choices that are less well-known, 
+however, are based on how Brin & Page estimated the magnitude of the 
+problem. I will re-do those estimations for today's Google, and 
+re-formulate some of the computations using the MapReduce framework. 
