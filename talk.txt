@@ -1,0 +1,51 @@
+
+
+1. Univ. van  NL: Big Data 
+First paper RIAO 1997: Robert Mercer: There is no data than more data
+
+2. Cambridge Analytica
+
+3. O'Neil Weapon of Math Destruction
+   1) harmful
+   2) large scale  
+   3) not transparent
+
+4. : Goals
+   1)  :-| 
+   2) small scale
+   3) transparent
+
+5. Theme 1: :-| open, technology-driven teaching
+
+Problem 1.1: theoretical courses with
+
+Problem 1.2: ivory tower courses 
+
+5. Theme 2: Small-scale, federated search solutions, 
+
+
+
+6. Problem 2.1 biased samples
+
+7. Problem 2.2 missing vocabulary in samples
+
+8. Problem 2.3 merging as reranking
+
+9. Theme 3: Transparent retrieval and recommendations
+
+10. Problem 3.1: retrieval models with low explainable power
+
+11. Problem 3.2: vector space models are back!!
+
+
+
+
+Frederick Jelinek (2005) Language Resources and Evaluation 39(1)
+
+February 2005, Volume 39, Issue 1, pp 25–34 | Cite as
+Some of my Best Friends are Linguists
+
+    Authors
+    Authors and affiliations
+
+    
