@@ -19,6 +19,8 @@ First paper RIAO 1997: Robert Mercer: There is no data than more data
 
 Problem 1.1: theoretical courses with
 
+Open cour
+
 Problem 1.2: ivory tower courses 
 
 5. Theme 2: Small-scale, federated search solutions, 

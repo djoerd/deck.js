@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>How Big is Google?</title>
+  <title>Now what? Towards transparent, federated search</title>
 
   <link rel="icon" href="images/me-cartoon.png">
 
@@ -32,19 +32,19 @@
   <script src="modernizr.custom.js"></script>
 
   <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="How Big is Google?" />   
-  <meta property="og:description" content="Presented at Radboud University, 11 March 2019">
+  <meta property="og:title" content="Now what?" />   
+  <meta property="og:description" content="Towards transparent, federated search">
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://djoerd.github.io/deck.js/rubigdata.html" />
+  <meta property="og:url" content="http://djoerd.github.io/deck.js/vision.html" />
   <meta property="og:image" content="http://djoerd.github.io/deck.js/images/me-cartoon.png" />
-  <link rel="canonical" href="http://djoerd.github.io/deck.js/rubigdata.html#slide-0" />
+  <link rel="canonical" href="http://djoerd.github.io/deck.js/vision.html#slide-0" />
   
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@djoerd" />
   <meta name="twitter:creator" content="@djoerd" />
-  <meta name="twitter:title" content="How Big is Google?" />
-  <meta name="twitter:description" content="Presented at Radboud University, 11 March 2019">
+  <meta name="twitter:title" content="Now what?" />
+  <meta name="twitter:description" content="Towards transparent, federated search">
   <meta name="twitter:image" content="http://djoerd.github.io/deck.js/images/me-cartoon.png" />
 
   <style>
@@ -64,15 +64,17 @@
   Thanks for giving my this opportunity. Grateful that NF and MR agreed to be present () Special thanks to AV...
   I'd like to pick up my lecture about Big Data for the Universiteit van Nederland where I left off ...
   if you haven't seen it: I explained that many of the claims about big data were made before the web.
-  For instance, in my very first conference article -- at RIAO 1997, I presented my MSc work on statistical machine translation --
-  I cited this researcher three times, Robert Mercer; who famously said:
+  For instance, in my very first conference article -- at RIAO 1997 in Montreal, I presented my MSc work on 
+  statistical machine translation -- I cited this researcher three times, Robert Mercer; who famously said:
     'There's no data like more data'
-  (more data is always better, which makes companies compete by collecting as much data as possible through surveillance.)
-  At IBM, Mercer made many advancements to statistical language modeling, but...
-  Mercer was also one of the first to use Data for behavioral targeting and psychological profiling, 
+  (more data will always improve your models! This makes companies compete by collecting as much data as possible through surveillance.)
+  At IBM, Mercer made many advancements to statistical language modeling, 
+  but...
+  Mercer was also one of the first to successfully use Data for behavioral targeting and psychological profiling, 
   which culminated in the Cambridge Analytica Scandal. 
   Cambridge Analytica, one of Mercer's companies, harvested the personal data of millions of people's 
   Facebook profiles without their consent and used it to manipulate elections.
+  Last month, a British parliament report investigating the scandal, called Facebook "digital gangsters".
   This is an example of very deliberate, unethical misuse of data, 
   but many uses of data are problematic, if they have the following 3 characteristics: 
   (Cathy O'Neil) 
@@ -87,11 +89,34 @@
 
   My plans for teaching and research are guided by O'Neils elements of weapons of math desctruction:
   I will work on:
-     * Awareness: Students and Data scientisists need to be aware that current technology allows 
-  data analysis at massive scale
-     * Small-scale solutions, that provide large-scale services through federation or p2p
-     * Transparanct search and recommendation:
-  
+     * Awareness: Students and Data scientisists need to be aware  of the damage that  
+        large-scale data analysis can do
+     * Small-scale solutions, that provide large-scale services by cooperation, either through federation or p2p technology
+     * Transparent search and recommendation: 
+
+   Let me give example of the kind of things that make my work unique and distinctive from others:
+
+   1. Awareness
+
+   To raise awereness, 
+   I plan to teach through publicly available courses, including public discussions through community networks.
+   This is a public discussion board of the federated social network Mastodon, run by U. Twente.
+   The board contains questions from students, with answers from me, but also discussions among students, 
+   posts from former students, and posts from professors of other institutions.
+   In the course, students developed recommenders for federated social network, but we also 
+   discuss things like: Some people are strongly opposed to such recommenders: Why?
+
+   2. Small-scale solutions
+
+   I plan to continue my work on federated search in several directions. One of the unique directions
+   would be to leverage click data from one of Searsia's installs as data for machine learned rankers.
+   Usually, such data is only available on a very large-scale at big search companies.
+   We recently 
+
+   3. Transparency 
+
+   asd
+ 
     
   
 
@@ -101,7 +126,7 @@
 
     <section class="slide">
       <h1>Now what?  <img src="images/me-cartoon.png" style="height:1em;display:inline-block;vertical-align:bottom;margin-bottom:0.1em;"><br>
-        <span style="font-size:0.7em; color:#777">Towards federated, transparant search</span><br>
+        <span style="font-size:0.7em; color:#777">Towards transparent federated search</span><br>
         <span style="font-size:0.3em;"><a target="_blank" href="https://mastodon.utwente.nl/@hiemstra">Djoerd Hiemstra (@hiemstra@mastodon.utwente.nl)</a></span><br>
       </h1>
     </section>
@@ -123,17 +148,22 @@
      <img alt="Robert Mercer" src="images/mercer.jpg"  style="height:240px;display:inline-block;vertical-align:middle;margin:0.2em 1em 0em 1em">
 There's no data like more data
     </blockquote>
-    <p style="text-align:center"><a href="http://www.lrec-conf.org/lrec2004/doc/jelinek.pdf">Robert Mercer (Frederick Jelinek's LREC 2004 keynote)</a></p>
+    <p style="text-align:center"><a href="http://www.lrec-conf.org/lrec2004/doc/jelinek.pdf">Robert Mercer (from Frederick Jelinek's LREC 2004 keynote)</a></p>
     </section>
 
 
     <section class="slide">
     <h2 style="text-align:center"> Cambridge Analytica scandal</h2>
+    <img alt="Newspaper articles on the CA scandal" src="images/cambridge-analytica.jpg">
     </section>
 
     <section class="slide">
     <h2> Weapons of math destruction</h2>
-    <ol>
+    <div>
+      <img src="images/oneil.jpg" align="left" style="height:200px;margin-right:2em;margin-left:2em">
+      <p><ul><li style="font-size:1.1em">Cathy O'Neil (2016).<br>Weapons of math destruction: How big data<br>increases inequality and threatens democracy.<br><em>Crown Random House</em>.</li></ul></p>
+    </div>
+    <ol style="clear:both">
      <li class="slide">damage</li>
      <li class="slide">(large-)scale</li>
      <li class="slide">opaque</li>
@@ -143,7 +173,10 @@ There's no data like more data
 
     <section class="slide">
     <h2> Responsible Data Science</h2>
-    <ol>
+    <div>
+      <img src="images/me-cartoon.png" align="left" style="height:200px;margin-right:2em;margin-left:2em">
+    </div>
+    <ol style="clear:both">
      <li class="slide">awareness</li>
      <li class="slide">small-scale</li>
      <li class="slide">transparent</li>
@@ -156,6 +189,28 @@ There's no data like more data
     </h1>
     </section>
 
+    <section class="slide">
+    <h2 style="text-align:center"> Open material &amp; discussion </h2>
+    <div>
+     <a target="_blank" href="https://mastodon.utwente.nl/tags/redi"><img alt="#REDI on Mastodon U. Twente" src="images/mastodon.png"></a>
+    </div>
+    <p style="text-align:center">
+    <a target="_blank" href="https://mastodon.utwente.nl/tags/redi">https://mastodon.utwente.nl/tags/redi</a>
+    </p>
+    </section>
+
+
+<!--
+    <section class="slide">
+    <h2 style="text-align:center"> Popular, state-of-the-art technology </h2>
+    <div>
+     <img alt="Jupyter notebook" src="images/jupyter.png">
+    </div>
+    <p style="text-align:center">
+    <a href="https://canvas.utwente.nl/courses/1778">https://canvas.utwente.nl/courses/1778</a>
+    </p>
+    </section>
+-->
 
     <section class="slide">
     <h1> Theme 2: Small-scale <img src="images/me-cartoon.png" style="height:1em;display:inline-block;vertical-align:bottom;margin-bottom:0.1em;"> <br>
@@ -165,12 +220,55 @@ There's no data like more data
 
 
     <section class="slide">
+    <h2> Merging as learning-to-rank reranking </h2>
+    <img alt="Searsia" src="images/searsia.png" align="right" style="margin-left:3em">
+    <ul style="margin-top:3em">
+      <li class="slide">Niek Tax, Sander Bockting, and Djoerd Hiemstra (2015).
+       A cross-benchmark comparison of 87 learning to rank methods,
+       <em>Information Processing and Management 51</em>(6)
+      </li>
+      <li class="slide">Djoerd Hiemstra, Claudia Hauff, Leif Azzopardi (2017).
+       Exploring the Query Halo Effect in Site Search: Leading People to Longer Queries, 
+       In: <em>Proceedings of ACM SIGIR 2017</em>
+      </li>
+    </ul>
+    </section>
+
+
+    <section class="slide">
     <h1> Theme 3: Transparency <img src="images/me-cartoon.png" style="height:1em;display:inline-block;vertical-align:bottom;margin-bottom:0.1em;"> <br>
         <span style="font-size:0.5em; color:#777">Transparent retrieval &amp; recommendations</span>
     </h1>
     </section>
 
+    <section class="slide">
+    <h2> Explainable Information Retrieval </h2>
+    <img alt="Searsia" src="images/relevancemodel.png" align="right" style="margin-left:3em">
+    <ul style="margin-top:3em">
+      <li class="slide">
+Suzan Verberne, Maya Sappelli, Djoerd Hiemstra, and Wessel Kraaij (2016).
+Evaluation and analysis of term scoring methods for term extraction. 
+In: <em>Information Retrieval 19</em>(5)
+      </li>
+      <li class="slide">
+Mostafa Dehghani, Hosein Azarbonyad, Jaap Kamps, Djoerd Hiemstra, and Maarten Marx (2016).
+Luhn Revisited: Significant Words Language Models. In: 
+<em>Proceedings of ACM CIKM 2016</em>
+      </li>
+    </ul>
+    </section>
 
+
+    <section class="slide">
+    <h2 style="text-align:center"> Probabilistic deep learning? </h2>
+    The vector model is back(!) Successful Deep learning NLP approaches use cosine, etc.
+    <ul style="margin-top:3em">
+      <li class="slide">Problem: Successful Deep learning NLP approaches use many
+      </li>
+      <li class="slide">Sequential EM</li>
+      <li class="slide">
+    </ul>
+    </section>
 
 
     <section class="slide">
