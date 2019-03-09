@@ -221,7 +221,7 @@ There's no data like more data
 
     <section class="slide">
     <h2> Merging as learning-to-rank reranking </h2>
-    <img alt="Searsia" src="images/searsia.png" align="right" style="margin-left:3em">
+    <img alt="Searsia" src="images/searsia.png" align="left" style="margin-right:3em">
     <ul style="margin-top:3em">
       <li class="slide">Niek Tax, Sander Bockting, and Djoerd Hiemstra (2015).
        A cross-benchmark comparison of 87 learning to rank methods,
@@ -243,7 +243,7 @@ There's no data like more data
 
     <section class="slide">
     <h2> Explainable Information Retrieval </h2>
-    <img alt="Searsia" src="images/relevancemodel.png" align="right" style="margin-left:3em">
+    <img alt="Searsia" src="images/relevancemodel.png" align="left" style="margin-right:3em">
     <ul style="margin-top:3em">
       <li class="slide">
 Suzan Verberne, Maya Sappelli, Djoerd Hiemstra, and Wessel Kraaij (2016).
@@ -260,16 +260,34 @@ Luhn Revisited: Significant Words Language Models. In:
 
 
     <section class="slide">
-    <h2 style="text-align:center"> Probabilistic deep learning? </h2>
-    The vector model is back(!) Successful Deep learning NLP approaches use cosine, etc.
+    <h2 style="text-align:center"> Probabilistic deep learning: </h2>
     <ul style="margin-top:3em">
-      <li class="slide">Problem: Successful Deep learning NLP approaches use many
+     <li class="slide"><span style="font-size:1.5em">The vector model is back(!) </span>
+      <ul>
+      <li style="font-size:1.2em"><strong>Problem:</strong> Examples of successful deep learning NLP approaches use "non-probabilistic elements" (cosine similarity, negative sampling, feed forward neural networks, learning rates, etc.) </li>
+      <li style="font-size:1.2em"><strong>Challenge:</strong> Formulate alternative -- probabilistic, generative -- alternatives to such approaches</li>
+      </ul>
+     </li>
+     <li class="slide"><span style="font-size:1.5em">Language models have improved... a lot!</span>
+      <ul>
+      <li style="font-size:1.2em"><strong>Problem:</strong> Big preformance improvements in speech recognition, machine translation, do not carry over to information retrieval 
       </li>
-      <li class="slide">Sequential EM</li>
-      <li class="slide">
+      <li style="font-size:1.2em"><strong>Challenge:</strong> "New language models for IR" instead of "Neural IR" </li>
+      </ul>
+     </li>
     </ul>
     </section>
 
+<!-- 
+ cosine, negative sampling in [1]
+ feed-forward NN in [2], 
+
+ [1] Tomas Mikolov et al. Distributed Representations of Words 
+     and Phrases and their Compositionality, NIPS 2013.
+ [2] Yoshua Bengio et al.  A neural probabilistic languagemodel.
+     The Journal of Machine Learning Research, 3:1137–1155, 2003.
+
+-->
 
     <section class="slide">
       <h1>Thanks <img src="images/me-cartoon.png" style="height:1em;display:inline-block;vertical-align:bottom;margin-bottom:0.1em;">
