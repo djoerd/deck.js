@@ -61,6 +61,49 @@
 
 <!--
 
+  Discuss the paper that started Google. This is one of the most interesting papers of the past 25 years.
+  Interesting: Brin & Page were PhD students at Stanford U.
+  This paper, that was accepted at the WWW Conference, was rejected at the main conference in IR: ACM SIGIR.
+  In 2006 I was at the SIGIR PC meeting, the meeting that discusses what papers should be accepted, and
+  Use a benchmark test collection, so not just a set of public web documents, but also:
+  a set of queries, and
+  a set of relevance judgements. 
+
+
+  Figure: Complex,
+   * Big File: Barrels. I interpret this as: "a barrel is a chunk in GFS"
+   * Sorters : 
+     * PageRank, Anchor text, Inverted Index. 
+   * repository
+   * doc index
+
+1. How many pages are there in Google 2019?
+  
+  Approach 1: "How does google search work": The Google Search index contains hundreds of billions of webpages 
+  Approach 2: "Search for 'the'": 25 billion results. Less than half of the web is English -> 50 billion results.
+  Approach 3: Moore's law: 21 years / 1.5 = 14 times doubled = times 2^14 = * 16000, so 24 million * 16,000 = 384 billion! 
+
+  Let's go for 200 billion
+
+2. How big is the 2019 "web page repository"? 
+  Approach 1: 147GB / 24 million = 6kb in 1998, so 6000 * 200 billion = 1.2 * 10^15 bytes = 1.2 PB (or 0.4 PB compressed)
+  Approach 2: ClueWeb 12 = 27.3 TB / 733 million documents = 36kb!
+
+  Let's go for 1.2 PB compressed
+
+3. 1.2 PB * 3 replication * 2 for processing 7.2 PB
+   8TB harddrives -> we need 1000
+   about 12 per data node, so we need 84 data nodes
+   BTW, In 2015 University of Twente spend over 200K Euro on a 80 node cluster, which holds about 0.5 PB
+
+   7.2 PB / 64MB chunks = 125,000,000 =  125 million chunks
+   The master maintains less than 64 bytes of metadata for each 64 MB chunk
+   In main memory, so 125 million * 64 = 8GB 
+
+4. 2 quad core CPUs per data node. 100Mbit throughput per thread? 100 MB throughput per data node
+   So 80 * 100 MB = 8 GB per sec. for the cluster.
+   1.2 PB / 8 GB = 15,000 sec. = 2500 min. = 42 h. 
+
 -->
 
     <section class="slide">
@@ -69,6 +112,12 @@
         <span style="font-size:0.7em; color:#777">Estimating the size of Big Data</span><br>
         <span style="font-size:0.3em;"><a target="_blank" href="https://mastodon.utwente.nl/@hiemstra">Djoerd Hiemstra (@hiemstra@mastodon.utwente.nl)</a></span><br>
       </h1>
+    </section>
+
+    <section class="slide">
+    <h2 style="text-align:center"> &nbsp; </h2>
+    <img alt="Google 1998 screen shot" src="images/google1998.png" style="display:block;margin-left:auto;margin-right:auto">
+    <p style="text-align:center"><a href="https://web.archive.org/web/19981111183552/google.stanford.edu/">https://web.archive.org/web/19981111183552/google.stanford.edu/</a></p>
     </section>
 
     <section class="slide">
@@ -82,12 +131,6 @@
     <a href="http://wwwconference.org/www7/1921/com1921.htm">The Anatomy of a Large-Scale Hypertextual Web Search Engine</a>,<br>
     In: <em>Proceedings of the 7<sup>th</sup> International World Wide Web Conference</em>.
     </p>
-    </section>
-
-    <section class="slide">
-    <h2 style="text-align:center"> &nbsp; </h2>
-    <img alt="Google 1998 screen shot" src="images/google1998.png" style="display:block;margin-left:auto;margin-right:auto">
-    <p style="text-align:center"><a href="https://web.archive.org/web/19981111183552/google.stanford.edu/">https://web.archive.org/web/19981111183552/google.stanford.edu/</a></p>
     </section>
 
     <section class="slide">
@@ -108,8 +151,9 @@
       <!-- The prototype with a full text and hyperlink database of at least 24 million pages is available at http://google.stanford.edu/ -->
       <ul>
       <li class="slide" style="font-size:1.5em;">credible source?</li>
-      <li class="slide" style="font-size:1.5em;">extrapolate from other information?</li>
+      <li class="slide" style="font-size:1.5em;">extrapolate from a sample?</li>
       <li class="slide" style="font-size:1.5em;">similar questions? </li>
+      <li class="slide" style="font-size:1.5em;">inside information? </li>
       <li class="slide" style="font-size:1.5em;"> ... ? </li>
       </ul>
     </section>
@@ -244,6 +288,21 @@ Of course a distributed system like Gloss (...) will often be the most efficient
 <!-- but it seems difficult to convince the world to use these systems because of the high administration costs of setting up large numbers of installations. Of course, it is quite likely that reducing the administration cost drastically is possible. If that happens, and everyone starts running a distributed indexing system, searching would certainly improve drastically. -->
     </blockquote>
     </section>
+
+    <section class="slide">
+    <h2> Federated Search </h2>
+    <ul><li><strong>Goal</strong>: For a query, select the best search engine in a federation</li> 
+      <li><strong>How</strong>: statistics of search engines in a federation
+      <ul><li style="font-size:1em">total #documents in engine</li>
+          <li style="font-size:1em">#documents with the term <em>t</em></li>
+      </ul>
+      </li>
+    </ul>
+    <p>Luis Gravano, Hector Garcia-Molina, and A. Tomasic (1994).<br>
+     The Effectiveness of GlOSS for the Text-Database Discovery Problem.<br> 
+     In: <em>Proceedings of ACM SIGMOD 1994</em></p>
+    </section>
+
 
 
     <section class="slide">

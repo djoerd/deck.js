@@ -79,7 +79,7 @@
   but many uses of data are problematic, if they have the following 3 characteristics: 
   (Cathy O'Neil) 
      * Damage: for instance if a Google search for my name retrieves untrue, offensive, and insulting 
-  results, then a potential employer deeny my job application.
+  results, then a potential employer might deny my job application.
      * Scale:  they are used on a large-scale, If all potential
   employers in the Netherlands use Google, then all my job applications will be denied, and I will
   be unable to get a job at all 
@@ -87,19 +87,20 @@
   because the algorithms used by Google do not provide an explanation of why the results are
   retrieved, nor does Google give their users a way to ask for clarification
 
+  Damage, Scale, and Opaque
   My plans for teaching and research are guided by O'Neils elements of weapons of math desctruction:
   I will work on:
      * Awareness: Students and Data scientisists need to be aware  of the damage that  
         large-scale data analysis can do
      * Small-scale solutions, that provide large-scale services by cooperation, either through federation or p2p technology
-     * Transparent search and recommendation: 
+     * Transparent search and recommendation: that can be understood by experts, and that can explain their decisions to laymen
 
    Let me give example of the kind of things that make my work unique and distinctive from others:
 
    1. Awareness
 
    To raise awereness, 
-   I plan to teach through publicly available courses, including public discussions through community networks.
+   I plan to teach through publicly available courses, including public discussions through community social networks.
    This is a public discussion board of the federated social network Mastodon, run by U. Twente.
    The board contains questions from students, with answers from me, but also discussions among students, 
    posts from former students, and posts from professors of other institutions.
@@ -110,12 +111,19 @@
 
    I plan to continue my work on federated search in several directions. One of the unique directions
    would be to leverage click data from one of Searsia's installs as data for machine learned rankers.
+   An interesting fact about current centralized search engines is that they run in two fases, the
+   first phase selects promising results that are reranked by a machine learned ranker trained on
+   user interactions.
    Usually, such data is only available on a very large-scale at big search companies.
-   We recently 
+   This build on our recent overview paper on learning-to-rank methods, that was awarded IP&amp;M's
+   best paper of 2015.
+   It also builds on our 2017 SIGIR paper on AB-testing with small scale 
+
 
    3. Transparency 
 
-   asd
+   Builds on our paper about term extraction 
+   ACM Computing Reviews Best of Computing in 2016.
  
     
   
@@ -163,7 +171,7 @@ There's no data like more data
       <img src="images/oneil.jpg" align="left" style="height:200px;margin-right:2em;margin-left:2em">
       <p><ul><li style="font-size:1.1em">Cathy O'Neil (2016).<br>Weapons of math destruction: How big data<br>increases inequality and threatens democracy.<br><em>Crown Random House</em>.</li></ul></p>
     </div>
-    <ol style="clear:both">
+    <ol style="clear:both;margin-top:3em">
      <li class="slide">damage</li>
      <li class="slide">(large-)scale</li>
      <li class="slide">opaque</li>
@@ -176,10 +184,10 @@ There's no data like more data
     <div>
       <img src="images/me-cartoon.png" align="left" style="height:200px;margin-right:2em;margin-left:2em">
     </div>
-    <ol style="clear:both">
-     <li class="slide">awareness</li>
-     <li class="slide">small-scale</li>
-     <li class="slide">transparent</li>
+    <ol style="clear:both;margin-top:4em">
+     <li class="slide">damage &#x2192; awareness</li>
+     <li class="slide">large-scale &#x2192; small-scale &amp; federation</li>
+     <li class="slide">opaque  &#x2192; transparent</li>
     </ol>
     </section>
 
@@ -221,7 +229,7 @@ There's no data like more data
 
     <section class="slide">
     <h2> Merging as learning-to-rank reranking </h2>
-    <img alt="Searsia" src="images/searsia.png" align="left" style="margin-right:3em">
+    <img alt="Searsia" src="images/searsia.png" align="left" style="margin-right:5em;padding-bottom:2em">
     <ul style="margin-top:3em">
       <li class="slide">Niek Tax, Sander Bockting, and Djoerd Hiemstra (2015).
        A cross-benchmark comparison of 87 learning to rank methods,
@@ -260,19 +268,19 @@ Luhn Revisited: Significant Words Language Models. In:
 
 
     <section class="slide">
-    <h2 style="text-align:center"> Probabilistic deep learning: </h2>
+    <h2> Probabilistic deep learning: </h2>
     <ul style="margin-top:3em">
-     <li class="slide"><span style="font-size:1.5em">The vector model is back(!) </span>
+     <li class="slide"><span style="font-size:1.4em">The vector model is back(!) </span>
       <ul>
-      <li style="font-size:1.2em"><strong>Problem:</strong> Examples of successful deep learning NLP approaches use "non-probabilistic elements" (cosine similarity, negative sampling, feed forward neural networks, learning rates, etc.) </li>
-      <li style="font-size:1.2em"><strong>Challenge:</strong> Formulate alternative -- probabilistic, generative -- alternatives to such approaches</li>
+      <li style="font-size:1.1em"><strong>Problem:</strong> Examples of successful deep learning NLP approaches use "non-probabilistic elements" (cosine similarity, feed forward neural networks, learning rates, etc.) </li>
+      <li style="font-size:1.1em"><strong>Challenge:</strong> Formulate alternative &#x2014; probabilistic, generative &#x2014; approaches</li>
       </ul>
      </li>
-     <li class="slide"><span style="font-size:1.5em">Language models have improved... a lot!</span>
+     <li class="slide"><span style="font-size:1.4em">Language models have improved... a lot!</span>
       <ul>
-      <li style="font-size:1.2em"><strong>Problem:</strong> Big preformance improvements in speech recognition, machine translation, do not carry over to information retrieval 
+      <li style="font-size:1.1em"><strong>Problem:</strong> Big performance improvements in speech recognition, machine translation, do not carry over to information retrieval 
       </li>
-      <li style="font-size:1.2em"><strong>Challenge:</strong> "New language models for IR" instead of "Neural IR" </li>
+      <li style="font-size:1.1em"><strong>Challenge:</strong> "New language models for IR" instead of "Neural IR" </li>
       </ul>
      </li>
     </ul>
